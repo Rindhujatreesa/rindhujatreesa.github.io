@@ -8,16 +8,27 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    background-image: url(img/back.jpeg);
+    
+}
+#name{
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color:white;
     background: black;
-    color: white;
+    font-size: 200%;
+    line-height: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 #header{
     width: 90%;
-    height: 100vh;
+    height: 80vh;
+    padding-top: 10px;
     background-image: url(img/cover3.jpeg);
     background-size: cover;
     background-position: center;
-    border-radius: 150px;
+    border-radius: 0px;
     border-style: groove;
 }
 .caption{
@@ -72,15 +83,7 @@ nav ul li a:hover{
     color: #7bff00;
     transform: translateY(-5px);
 }
-#name{
-    width: 100%;
-    padding-top: 10px;
-    text-align: center;
-    color:beige;
-    font-size: 200%;
-    line-height: 2;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-}
+
 span{
     color: #7bff00;
 }
@@ -130,7 +133,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:beige;
+    color: white;
     text-align: center;
     font-family: 'Serif';
 }
@@ -138,7 +141,7 @@ nav ul li a:hover::after{
     padding-top: 20px;
     font-size: 20px;
     font-style: oblique;
-    color: beige;
+    color: white;
     line-height: 1.5;
     text-align: justify;
 
@@ -150,7 +153,7 @@ nav ul li a:hover::after{
     padding-top: 20px;
     font-size: 20px;
     font-style: oblique;
-    color: beige;
+    color: white;
     line-height: 1.5;
     text-align: justify;
 }
@@ -173,6 +176,7 @@ nav ul li a:hover::after{
 .jour-col-1{
     flex-basis: 80%;
     margin-left: -300px;
+    
 }
 .jour-col-1 img {
     width:100%;
@@ -183,11 +187,12 @@ nav ul li a:hover::after{
 .jour-col-2{
     flex-basis: 100%;
     margin-right: -300px;
+    color: white;
 }
 .sub-title{
     font-size: 55px;
     font-weight: 600;
-    color:beige;
+    color: white;
     text-align: center;
     line-height: 2.5;
 }
@@ -291,6 +296,9 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-gap:30px;
     margin-top:50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
 }
 .work{
     border-radius: 10px;
