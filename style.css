@@ -12,14 +12,20 @@ body{
     
 }
 #name{
-    width: 100%;
+    width: 90%;
     padding-top: 10px;
     text-align: center;
     color:white;
-    background: black;
+    background: rgba(3, 41, 47, 0.428);
     font-size: 200%;
     line-height: 2;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.intro p{
+    padding:0 200px;
+    font-size:20px;
+    line-height: 1.5;
+    color: white;
 }
 #header{
     width: 90%;
@@ -28,15 +34,10 @@ body{
     background-image: url(img/cover3.jpeg);
     background-size: cover;
     background-position: center;
-    border-radius: 0px;
+    border-radius: 10px;
     border-style: groove;
 }
-.caption{
-    text-align: center;
-    background-color: black;
-    font-size: 70px;
-    font-family:'Brush Script MT'
-}
+
 .container{
     padding: 10px 30%;
 }
@@ -50,7 +51,7 @@ nav{
 nav ul li{
     
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 30px;
     margin-right: 5px;
     margin-left: 930px;
@@ -80,24 +81,20 @@ nav ul li a:hover{
     transition: transform 0.5s;
 }
 .quick-contact a:hover{
-    color: #7bff00;
+    color: rgb(4, 208, 239);
     transform: translateY(-5px);
 }
 
 span{
-    color: #7bff00;
+    color: rgb(4, 208, 239);
 }
-.intro p{
-    padding:0 200px;
-    font-size:20px;
-    line-height: 1.5;
-}
+
 
 nav ul li a::after{
     content: '';
     width: 0;
     height: 5px;
-    background: #7bff00;
+    background: rgb(4, 208, 239);
     position:absolute;
     left:0;
     bottom: -6px;
@@ -166,7 +163,7 @@ nav ul li a:hover::after{
 }
 
 #journey{
-    padding: 0 0;
+    padding: 50px 50px;
 }
 .row{
     display: flex;
@@ -212,14 +209,14 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 5px;
-    background: #7bff00;
+    background: rgb(4, 208, 239);
     position:absolute;
     left:0;
     bottom: -6px;
     transition:transform 0.5s;
 }
 .tab-links.active-link::after{
-    width: 70%;
+    width: 50%;
 }
 .tab-links:hover{
     transform: scale(1.2);
@@ -252,7 +249,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 5px;
-    background: #01fc76;
+    background: rgb(4, 208, 239);
     position:absolute;
     left:0;
     bottom: -6px;
@@ -276,7 +273,7 @@ nav ul li a:hover::after{
     font-size: 18px;
 }
 .tab-content ul li span{
-    color:rgb(4, 254, 33);
+    color:rgb(4, 208, 239);
     font-size: 20px;
 }
 .tab-skill-content ul li{
@@ -284,7 +281,7 @@ nav ul li a:hover::after{
     font-size: 18px;
 }
 .tab-skill-content ul li span{
-    color:rgb(4, 254, 33);
+    color:rgb(4, 208, 239);
 }
 #project{
     padding:30px 10px;
@@ -321,7 +318,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top:20px;
-    color:#7bff00;
+    color:rgb(4, 208, 239);
     text-decoration: none;
     font-size:18px;
     line-height: 60px;
@@ -338,7 +335,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #7bff00;
+    border: 1px solid rgb(4, 208, 239);
     padding:14px 50px;
     border-radius: 6px;
     color: white;
@@ -346,7 +343,7 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 .btn:hover{
-    background:#05cb05;
+    background:rgb(4, 208, 239);
     transform: scale(1.1);
 }
 #contact{
@@ -360,9 +357,10 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 30px;
+    color: white;
 }
 .contact-left p i{
-    color: #7bff00;
+    color: rgb(4, 208, 239);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -378,7 +376,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #7bff00;
+    color: rgb(4, 208, 239);
     transform: translateY(-5px);
 }
 .contact-right form{
@@ -415,4 +413,322 @@ form button{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+/* --------------- css for mobile devices ----------------- */
+
+@media only screen and (max-width: 600px){
+    #header{
+        display: contents;
+        width: 0%;
+        height: 0vh;
+        background-image:none;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .container{
+        padding: 0px 5%;
+    }
+    
+    nav{
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    nav ul li{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    nav ul li a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        cursor:pointer;
+        position: relative;
+        transition: transform 0.5s;
+        font-size: 10px;
+        text-align: left;
+    }
+    .quick-contact{
+        margin-top: -25px;
+        text-align: right;
+    }
+    
+    .quick-contact a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.5s;
+        
+    }
+    #name{
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        color:white;
+        background: rgba(3, 41, 47, 0.428);
+        font-size: 25px;
+        line-height: 2;
+        /*margin-left: 300px;*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+    .intro p{
+        padding:0px 0px;
+        text-align: center;
+        font-size:10px;
+        line-height: 1.5;
+        color: white;
+    }
+    #about{
+        padding: 0px 0px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .about-col-2{
+        display: none;
+        flex-basis: 0%;
+        margin-right: 0px;
+    }
+    .sub-title{
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        font-family: 'Serif';
+    }
+    .about-me{
+        padding-top: 20px;
+        font-size: 16px;
+        font-style: oblique;
+        color: white;
+        line-height: 1.5;
+        text-align: center;
+    
+    } 
+    #more{
+        display: none;
+    }
+    #dots, #more{
+        padding-top: 20px;
+        font-size: 16px;
+        font-style: oblique;
+        color: white;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    #myBtn{
+        background: black;
+        padding: 14px 10px;
+        font-size: 12px;
+        margin-top: 20px;
+        cursor: pointer;    
+    }
+    #journey{
+        padding: 0px 0px;
+    }
+    .row{
+        display: flex;
+        justify-content: right;
+        flex-wrap: wrap;
+    }
+    .jour-col-1{
+        display: none;
+        flex-basis: 0%;
+    }
+    .jour-col-2{
+        flex-basis: 100%;
+        margin-left: 30px;
+        margin-right: 0px;
+        text-align: left;
+        color: white;
+    }
+    .sub-title{
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        line-height: 2.5;
+    }
+    .tab-titles{
+        display:flex;
+        margin: 5px 0 40px;
+        text-align: center;
+    }
+    .tab-links{
+        margin-right: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .tab-skills{
+        margin-right: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 1;
+        transition:transform 0.5s;
+    }
+    .tab-content ul li{
+        line-height: 2;
+        font-size: 16px;
+    }
+    .tab-content ul li span{
+        color:rgb(4, 208, 239);
+        font-size: 16px;
+    }
+    .tab-skill-content ul li{
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    #project{
+        padding:30px 10px;
+    }
+    
+    .work-list{
+        text-align: center;
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-gap:30px;
+        margin-top:50px;
+        margin-right: 30px;
+        margin-left: 30px;
+        color: white;
+    }
+    .work{
+        border-radius: 10px;
+        position: relative;
+        overflow:hidden;
+    }
+    .work img{
+        width: 100%;
+        border-radius: 10px;
+        display: grid;
+        transition: transform 0.5s;
+    }
+    .work h3{
+        font-size:20px;
+        line-height: 2;
+    }
+    .work p{
+        line-height: 2;
+        text-align: justify;
+    }
+    .layer a{
+        margin-top:20px;
+        color:rgb(4, 208, 239);
+        text-decoration: none;
+        font-size:18px;
+        line-height: 60px;
+        background:black;
+        width:65px;
+        height: 65px;
+        text-align: center;
+    }
+    
+    .work:hover img{
+        transform:scale(1.1);
+    }
+    .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid rgb(4, 208, 239);
+        padding:14px 50px;
+        border-radius: 6px;
+        color: white;
+        text-decoration: none;
+        transition: background 0.5s, transform 0.5s;
+    }
+    .btn:hover{
+        background:rgb(4, 208, 239);
+        transform: scale(1.1);
+    }
+    #contact{
+        padding: 0px 0px;
+    }
+    .contact-left{
+        flex-basis: 35%;
+    }
+    .contact-right{
+        flex-basis: 60%;
+    }
+    .contact-left p{
+        margin-top: 30px;
+        font-size: 12px;
+        color: white;
+    }
+    .contact-left p i{
+        color: rgb(4, 208, 239);
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+    .social-icons a{
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 15px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+    .social-icons a:hover{
+        color: rgb(4, 208, 239);
+        transform: translateY(-5px);
+    }
+    .contact-right form{
+        text-align: right;
+        margin-left: 50px;
+        width: 70%;
+    }
+    form input, form textarea{
+        width:100%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 15px 0;
+        color:#fff;
+        font-size:18px;
+        border-radius: 6px;
+    }
+    form button{
+        background: #262626;
+        padding: 0px 30px;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: #262626;
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 6px;
+    }
+    
+    #msg{
+        color: #61b752;
+        margin-top: -40px;
+        display: block;
+    }
 }
