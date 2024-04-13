@@ -31,7 +31,7 @@ body{
     width: 90%;
     height: 80vh;
     padding-top: 10px;
-    background-image: url(img/cover3.jpeg);
+    background-image: url(img/cover.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -176,7 +176,7 @@ nav ul li a:hover::after{
     
 }
 .jour-col-1 img {
-    width:100%;
+    width:120%;
     height:90vh;
     border-radius: 15px;
     border-style: groove;
