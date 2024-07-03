@@ -9,15 +9,16 @@ html{
 }
 body{
     background-image: url(img/back.jpeg);
+    background-color: black;
     
 }
 #name{
-    width: 90%;
+    width: 100%;
     padding-top: 10px;
     text-align: center;
     color:white;
     background: rgba(3, 41, 47, 0.428);
-    font-size: 200%;
+    font-size: 250%;
     line-height: 2;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
@@ -40,6 +41,12 @@ body{
 
 .container{
     padding: 10px 30%;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: rgb(4, 208, 239);
 }
 
 nav{
@@ -143,12 +150,18 @@ nav ul li a:hover::after{
     text-align: justify;
 
 } 
+.toggle-text{
+    font-style: oblique;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
 #more{
     display: none;
 }
-#dots, #more{
+.dots, .more{
     padding-top: 20px;
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-style: oblique;
     color: white;
     line-height: 1.5;
@@ -407,6 +420,7 @@ form button{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    color: whitesmoke;
 }
 
 #msg{
@@ -487,6 +501,13 @@ form button{
         line-height: 1.5;
         color: white;
     }
+    a {
+        color: white;
+    }
+    a:hover {
+        color: rgb(4, 208, 239);
+    }
+    
     #about{
         padding: 0px 0px;
     }
@@ -521,12 +542,18 @@ form button{
         text-align: center;
     
     } 
+    .toggle-text{
+        font-style: oblique;
+        color: white;
+        line-height: 1.5;
+        text-align: justify;
+    }
     #more{
         display: none;
     }
-    #dots, #more{
+    .dots, .more{
         padding-top: 20px;
-        font-size: 16px;
+        /*font-size: 16px;*/
         font-style: oblique;
         color: white;
         line-height: 1.5;
@@ -729,6 +756,7 @@ form button{
         font-weight: 300;
         margin-top: 20px;
         font-size: 6px;
+        color: whitesmoke;
     }
     
     #msg{
