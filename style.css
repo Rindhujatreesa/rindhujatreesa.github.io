@@ -195,7 +195,7 @@ nav ul li a:hover::after{
     border-style: groove;
 }
 .jour-col-2{
-    flex-basis: 90%;
+    flex-basis: 110%;
     margin-right: -300px;
     color: white;
 }
