@@ -189,13 +189,13 @@ nav ul li a:hover::after{
     
 }
 .jour-col-1 img {
-    width:100%;
+    width:110%;
     height:90vh;
     border-radius: 15px;
     border-style: groove;
 }
 .jour-col-2{
-    flex-basis: 100%;
+    flex-basis: 90%;
     margin-right: -300px;
     color: white;
 }
